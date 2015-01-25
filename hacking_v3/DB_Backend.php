@@ -5,8 +5,8 @@
     function savePost($post){
         $con = GetConnecor(); 
         
-        //$post = mysqli_real_escape_string($con, $post);
-        
+        $post = mysqli_real_escape_string($con, $post);
+      
         $sql = "INSERT INTO guestbook (post) VALUES ('".$post."')"; 
         executeMulti($sql); 
     }

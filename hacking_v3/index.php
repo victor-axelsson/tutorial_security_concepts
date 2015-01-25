@@ -9,6 +9,9 @@
         include 'DB_Backend.php'; 
 
         if(isset($_POST['data'])){
+            
+            
+            
             savePost($_POST['data']); 
         }
     ?>
