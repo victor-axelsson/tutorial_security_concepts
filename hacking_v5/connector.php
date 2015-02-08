@@ -9,7 +9,7 @@
         $result = mysqli_multi_query($con, $cmd);
         
         if ($result === false) {
-           printf("error: %s\n", mysqli_error($con));
+            printf("error: %s\n", mysqli_error($con));
         }
         
         mysqli_close($con);
